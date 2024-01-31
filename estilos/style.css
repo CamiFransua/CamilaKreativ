@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anton&family=Asap+Condensed:wght@700&family=Open+Sans:wght@300&display=swap");
+/*font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Asap Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Estilos generales*/
+body {
+  background-color: #f5f5f5; }
+
+h1 {
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 100%;
+  color: #0D1317;
+  font-size: 40px;
+  margin: 60px auto;
+  text-align: center; }
+
+h2 {
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #0D1317; }
+
+p, h3 {
+  color: #0D1317;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #0D1317; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.icon-button {
+  padding: 10px;
+  margin: 40px;
+  background-color: #FFA629;
+  color: #0D1317;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  display: inline;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  gap: 1rem; }
+  .icon-button img {
+    min-width: 2rem;
+    max-width: 2rem; }
+
+.etiqueta {
+  padding: 10px;
+  margin: 10px;
+  background-color: #14AE5C;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  display: inline;
+  align-items: center;
+  cursor: default;
+  white-space: nowrap;
+  gap: 1rem; }
+
+.Icon {
+  width: 20px; }
+
+/*Estilos de header*/
+header {
+  position: sticky;
+  top: 0; }
+  header nav div a img {
+    max-width: 10rem; }
+  header nav ul {
+    align-items: center; }
+
+/*Estilos de main*/
+main section#section-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #0D1317;
+  max-width: 400px;
+  margin: 60px auto; }
+  main section#section-container div.section1 div {
+    display: flex;
+    justify-content: center; }
+    main section#section-container div.section1 div img {
+      width: 10rem; }
+  main section#section-container div.section1 div.biografia {
+    padding-bottom: 50px; }
+
+main section#Card {
+  margin: 20px 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #0D1317; }
+  main section#Card div#titleIcon {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem; }
+  main section#Card div.Parragraph {
+    max-width: 400px; }
+    main section#Card div.Parragraph p {
+      padding: 40px; }
+  main section#Card div.Proyecto {
+    margin: auto; }
+    main section#Card div.Proyecto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 1000px; }
+  main section#Card div.myBoton {
+    display: flex;
+    justify-content: center; }
+  main section#Card div#etiquetas {
+    display: wrap;
+    text-align: center; }
+
+main section#Proyectos {
+  display: wrap;
+  margin: auto; }
+  main section#Proyectos div.Proyecto {
+    margin-top: 20px;
+    max-width: 600px; }
+
+main div.CV {
+  text-align: center; }
+  main div.CV section#CV {
+    max-width: 800px; }
+    main div.CV section#CV h1.TitleCV {
+      text-align: left; }
+    main div.CV section#CV h1.SubTitleCV {
+      text-align: left;
+      font-size: 150%; }
+    main div.CV section#CV h2 {
+      margin-top: 60px;
+      margin-bottom: 20px; }
+  main div.CV section#CV {
+    text-align: left;
+    margin: 0 80px; }
+
+/*Estilos de footer*/
+footer {
+  width: 100%;
+  background-color: #0D1317;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto; }
+  footer h2 {
+    color: #f5f5f5; }
+  footer section.FooterContent ul {
+    padding-bottom: 40px; }
+    footer section.FooterContent ul li {
+      text-align: center; }
+      footer section.FooterContent ul li a {
+        color: #f5f5f5; }
+  footer section div#derechos {
+    margin: auto; }
+    footer section div#derechos h4 {
+      color: #f5f5f5; }
+
+/*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  footer section.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: first baseline;
+    margin: 10px 60px; } }
+
+/*MQ de desktop*/
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1000px;
+    margin-inline: auto; }
+  footer section.FooterContent {
+    max-width: 800px;
+    margin-inline: auto; } }
