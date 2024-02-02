@@ -29,7 +29,7 @@ p, h3 {
   color: #0D1317;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px; }
+  font-size: 11px; }
 
 h4 {
   font-family: 'Open Sans', sans-serif;
@@ -41,10 +41,15 @@ a {
 
 ul {
   list-style: none; }
+  ul li {
+    color: #0D1317;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px; }
 
 .icon-button {
   padding: 10px;
-  margin: 40px;
+  margin: 32px 16px 0;
   background-color: #FFA629;
   color: #0D1317;
   border: none;
@@ -59,9 +64,26 @@ ul {
     min-width: 2rem;
     max-width: 2rem; }
 
-.etiqueta {
+.icon-button2 {
   padding: 10px;
-  margin: 10px;
+  margin: 16px;
+  background-color: #ffe8a3;
+  color: #0D1317;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  display: inline;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  gap: 1rem; }
+  .icon-button2 img {
+    min-width: 2rem;
+    max-width: 2rem; }
+
+.etiqueta {
+  padding: 4px 10px;
+  margin: 4px;
   background-color: #14AE5C;
   border: none;
   border-radius: 6px;
@@ -70,7 +92,8 @@ ul {
   align-items: center;
   cursor: default;
   white-space: nowrap;
-  gap: 1rem; }
+  gap: 16px;
+  font-size: 10px; }
 
 .Icon {
   width: 20px; }
@@ -88,20 +111,22 @@ header {
 main section#section-container {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #0D1317;
-  max-width: 400px;
+  background-color: #efefef;
+  padding: 40px;
   margin: 60px auto; }
   main section#section-container div.section1 div {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    max-width: 240px; }
     main section#section-container div.section1 div img {
       width: 10rem; }
+  main section#section-container div.section1 div.titulo h1 {
+    text-align: left; }
   main section#section-container div.section1 div.biografia {
-    padding-bottom: 50px; 
-    min-width: 200px;
-    max-width: 400px;}
+    padding-bottom: 50px; }
+
 main section#Card {
-  margin: 20px 80px;
+  margin: 20px 100px;
   padding-bottom: 60px;
   border-bottom: 1px solid #0D1317; }
   main section#Card div#titleIcon {
@@ -111,7 +136,8 @@ main section#Card {
   main section#Card div.Parragraph {
     max-width: 400px; }
     main section#Card div.Parragraph p {
-      padding: 40px; }
+      margin: auto;
+      padding: 40px 0; }
   main section#Card div.Proyecto {
     margin: auto; }
     main section#Card div.Proyecto img {
@@ -135,6 +161,10 @@ main section#Proyectos {
 
 main div.CV {
   text-align: center; }
+  main div.CV div.myBoton {
+    display: wrap; }
+    main div.CV div.myBoton #boton {
+      margin: 16px 100px; }
   main div.CV section#CV {
     max-width: 800px; }
     main div.CV section#CV h1.TitleCV {
@@ -165,7 +195,9 @@ footer {
     footer section.FooterContent ul li {
       text-align: center; }
       footer section.FooterContent ul li a {
-        color: #f5f5f5; }
+        color: #f5f5f5;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px; }
   footer section div#derechos {
     margin: auto; }
     footer section div#derechos h4 {
@@ -173,22 +205,37 @@ footer {
 
 /*MQ de tablet*/
 @media screen and (min-width: 600px) {
-  main section#section-container div.section1 div.biografia {
-    padding-bottom: 50px; 
-    min-width: 400px;
-    max-width: 800px;}
+  main section#section-container div {
+    max-width: 400px; }
+  main section#Card div#etiquetas {
+    margin-bottom: 32px; }
+  main div.CV {
+    text-align: center; }
+    main div.CV div.myBoton {
+      display: wrap; }
+      main div.CV div.myBoton #boton {
+        margin: 32px 16px; }
   footer section.FooterContent {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: first baseline;
-    margin: 10px 60px; } }
+    margin: 0 100px 40px; } }
 
 /*MQ de desktop*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   main {
-    max-width: 1000px;
+    max-width: 800px;
     margin-inline: auto; }
+    main section#section-container {
+      padding: 100px;
+      max-width: 100%;
+      margin: 60px 0; }
+      main section#section-container div.section1 div {
+        display: flex;
+        justify-content: center; }
+        main section#section-container div.section1 div img {
+          width: 10rem; }
   footer section.FooterContent {
     max-width: 800px;
     margin-inline: auto; } }
